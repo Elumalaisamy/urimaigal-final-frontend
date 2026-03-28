@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import type { User, AuthResponse, ApiResponse, LoginRequest, RegisterRequest } from '@/types'
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = 'urimaigal-backend.railway.internal'
 
 export const useAuthStore = defineStore('auth', () => {
   const user = ref<User | null>(null)
