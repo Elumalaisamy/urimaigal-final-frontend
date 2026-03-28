@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import type { Consultation, ApiResponse } from '@/types'
 import { useAuthStore } from './auth'
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = 'https://urimaigal-backend-production.up.railway.app'
 
 export const useBookingStore = defineStore('booking', () => {
   const bookings = ref<Consultation[]>([])
