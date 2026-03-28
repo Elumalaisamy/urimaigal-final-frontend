@@ -4,7 +4,7 @@ import { ref, computed } from 'vue'
 import type { Lawyer, FilterOptions, LegalCategory, ApiResponse } from '@/types'
 import { useAuthStore } from './auth'
 
-const API_BASE = 'urimaigal-backend.railway.internal'
+const API_BASE = 'https://urimaigal-backend-production.up.railway.app/'
 
 export const useLawyersStore = defineStore('lawyers', () => {
   const authStore = useAuthStore()
